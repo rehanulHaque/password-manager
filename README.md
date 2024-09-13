@@ -36,7 +36,7 @@ PasswordSecure is a modern password manager that helps you securely store, manag
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/password-secure.git
+   git clone git@github.com:rehanulHaque/password-manager.git
 ```
 2. Install dependencies:
 
