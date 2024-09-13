@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PasswordSecure - Manage Your Passwords with Military-Grade Encryption
+
+PasswordSecure is a modern password manager that helps you securely store, manage, and encrypt your passwords with a 32-digit key. It ensures that your passwords are safe and can only be accessed by decrypting them, providing an extra layer of security.
+
+## Features
+
+- **Generate Strong Passwords**: Automatically generate secure and complex passwords for your online accounts.
+  
+- **User Profile**: Manage your personal settings, including encryption keys, login details, and account preferences.
+
+- **Dashboard**: Get an overview of your stored passwords, recent activity, and security insights all in one place.
+
+- **Add Passwords**: Easily add new passwords to your secure vault, with automatic encryption upon saving.
+
+- **Delete Passwords**: Remove any stored passwords securely with just a click.
+
+- **Password Security**: All passwords are encrypted using a 32-digit key, making it impossible to view or copy passwords without decrypting them first.
+
+## Key Security Features
+
+- **32-Digit Encryption**: Every password you save is encrypted using a 32-digit key for maximum security.
+  
+- **Password Visibility Control**: Passwords are never visible in plaintext unless you choose to decrypt them. This ensures no unauthorized access.
+
+- **Cannot Copy Without Decrypting**: For added security, you cannot copy or view passwords without decrypting them first.
+
+## Tech Stack
+
+- **Next.js**: Framework for building server-side rendered and static websites.
+- **Tailwind CSS**: For fast and responsive UI development.
+- **MongoDB & Mongoose**: For managing user data and passwords securely.
+- **Auth.js**: For authentication and managing user sessions.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/password-secure.git
+```
+2. Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set up environment variables in a .env file:
+```bash
+DB_URL="your_db_url"
+AUTH_GOOGLE_ID="your_google_id"
+AUTH_GOOGLE_SECRET="your_google_secret"
+AUTH_SECRET="your_auth_secret"
+HOST_URL="http://localhost:3000"
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Run the development server:
+```bash
+npm run dev
+```
